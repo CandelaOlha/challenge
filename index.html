@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Red Fuse | Colgate</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <main>
+      <h1>Welcome!</h1>
+      <p>
+        Please proceed with the following tasks. Take in account that you can
+        edit existing files and/or create new ones.
+      </p>
+
+      <div>
+        <h2>To do</h2>
+        <ul>
+          <li>
+            When users click on 'Subscribe' button, a modal should pop up
+            containing a form with a single input (email) and a Submit button.
+          </li>
+          <li>
+            Upon submission, you should only make sure the entered email is
+            valid.
+          </li>
+          <li>Users should be able to close the modal.</li>
+          <li>
+            It's not required to style things in a specific way, as long as
+            elements reflect what they are (for example, a modal looking like a
+            modal).
+          </li>
+        </ul>
+      </div>
+      <div class="newsletter">
+        <button class="button" id="suscribeButton">Subscribe!</button>
+      </div>
+    </main>
+    <!-- Popup -->
+    <dialog id="popup">
+      <button class="popup-close-button" id="closePopupButton">
+        <i class="fas fa-times" aria-label="Close popup"></i>
+      </button>
+      <h2 class="popup-title">Suscribe to our newsletter!</h2>
+      <p class="popup-text">
+        Stay up to date with the latest news and get exclusive discounts on our
+        products!
+      </p>
+      <form id="subscriptionForm">
+        <div class="form-element-container">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Write your email..."
+            id="email"
+          />
+        </div>
+        <button type="submit" class="button" id="submitButton">Suscribe</button>
+      </form>
+      <p class="validation-text"></p>
+    </dialog>
+    <script src="index.js"></script>
+  </body>
+</html>
